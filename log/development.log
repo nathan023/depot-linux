@@ -1,0 +1,61 @@
+  [4;36;1mSQL (0.000105)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mProduct Columns (0.000612)[0m   [0mSHOW FIELDS FROM products[0m
+
+
+Processing AdminController#list (for 127.0.0.1 at 2010-10-04 14:55:18) [GET]
+  Session ID: cf754cf8823a9e739a2fe7affee241a8
+  Parameters: {"action"=>"list", "controller"=>"admin"}
+DEPRECATION WARNING: paginate is deprecated and will be removed from Rails 2.0 (Pagination is moving to a plugin in Rails 2.0: script/plugin install svn://errtheblog.com/svn/plugins/classic_pagination)  See http://www.rubyonrails.org/deprecation for details. (called from list at /home/caruso/Aptana RadRails Workspace/depot/app/controllers/admin_controller.rb:12)
+  [4;36;1mSQL (0.000086)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mProduct Columns (0.000478)[0m   [0mSHOW FIELDS FROM products[0m
+  [4;36;1mSQL (0.000092)[0m   [0;1mSELECT count(*) AS count_all FROM products [0m
+  [4;35;1mProduct Load (0.000084)[0m   [0mSELECT * FROM products LIMIT 0, 10[0m
+Rendering  within layouts/admin
+Rendering admin/list
+Completed in 0.06201 (16 reqs/sec) | Rendering: 0.00347 (5%) | DB: 0.00074 (1%) | 200 OK [http://localhost/admin/list]
+
+
+Processing AdminController#new (for 127.0.0.1 at 2010-10-04 14:55:20) [GET]
+  Session ID: cf754cf8823a9e739a2fe7affee241a8
+  Parameters: {"action"=>"new", "controller"=>"admin"}
+  [4;36;1mProduct Columns (0.000534)[0m   [0;1mSHOW FIELDS FROM products[0m
+Rendering  within layouts/admin
+Rendering admin/new
+Rendered admin/_form (0.00307)
+Completed in 0.01023 (97 reqs/sec) | Rendering: 0.00598 (58%) | DB: 0.00053 (5%) | 200 OK [http://localhost/admin/new]
+
+
+Processing AdminController#create (for 127.0.0.1 at 2010-10-04 14:59:52) [POST]
+  Session ID: cf754cf8823a9e739a2fe7affee241a8
+  Parameters: {"commit"=>"Create", "action"=>"create", "product"=>{"price"=>"28.98", "image_url"=>"http://3.bp.blogspot.com/_EAXkbUOcFjs/THvXtKNlAUI/AAAAAAAAAsQ/4H1MBf0kA1I/s320/normal_harry_potter_7.jpg", "title"=>"Harry potter e il buco di culo", "date_available(1i)"=>"2014", "date_available(2i)"=>"10", "date_available(3i)"=>"4", "description"=>"Libro veramente del cazzo senza manco un minimo di suspance.", "date_available(4i)"=>"23", "date_available(5i)"=>"45"}, "controller"=>"admin"}
+  [4;35;1mProduct Columns (0.000646)[0m   [0mSHOW FIELDS FROM products[0m
+  [4;36;1mSQL (0.000070)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000217)[0m   [0mINSERT INTO products (`price`, `image_url`, `title`, `date_available`, `description`) VALUES('28.98', 'http://3.bp.blogspot.com/_EAXkbUOcFjs/THvXtKNlAUI/AAAAAAAAAsQ/4H1MBf0kA1I/s320/normal_harry_potter_7.jpg', 'Harry potter e il buco di culo', '2014-10-04 23:45:00', 'Libro veramente del cazzo senza manco un minimo di suspance.')[0m
+  [4;36;1mSQL (0.000030)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/admin/list
+Completed in 0.00745 (134 reqs/sec) | DB: 0.00096 (12%) | 302 Found [http://localhost/admin/create]
+
+
+Processing AdminController#list (for 127.0.0.1 at 2010-10-04 14:59:53) [GET]
+  Session ID: cf754cf8823a9e739a2fe7affee241a8
+  Parameters: {"action"=>"list", "controller"=>"admin"}
+DEPRECATION WARNING: paginate is deprecated and will be removed from Rails 2.0 (Pagination is moving to a plugin in Rails 2.0: script/plugin install svn://errtheblog.com/svn/plugins/classic_pagination)  See http://www.rubyonrails.org/deprecation for details. (called from list at /home/caruso/Aptana RadRails Workspace/depot/app/controllers/admin_controller.rb:12)
+  [4;35;1mProduct Columns (0.000522)[0m   [0mSHOW FIELDS FROM products[0m
+  [4;36;1mSQL (0.000083)[0m   [0;1mSELECT count(*) AS count_all FROM products [0m
+  [4;35;1mProduct Load (0.000096)[0m   [0mSELECT * FROM products LIMIT 0, 10[0m
+Rendering  within layouts/admin
+Rendering admin/list
+Completed in 0.00784 (127 reqs/sec) | Rendering: 0.00329 (41%) | DB: 0.00070 (8%) | 200 OK [http://localhost/admin/list]
+
+
+Processing AdminController#list (for 127.0.0.1 at 2010-10-05 09:26:28) [GET]
+  Session ID: 0587603a5caa853c40217f6343497ada
+  Parameters: {"action"=>"list", "controller"=>"admin"}
+DEPRECATION WARNING: paginate is deprecated and will be removed from Rails 2.0 (Pagination is moving to a plugin in Rails 2.0: script/plugin install svn://errtheblog.com/svn/plugins/classic_pagination)  See http://www.rubyonrails.org/deprecation for details. (called from list at /home/caruso/Aptana RadRails Workspace/depot/app/controllers/admin_controller.rb:12)
+  [4;36;1mSQL (0.000122)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mProduct Columns (0.000564)[0m   [0mSHOW FIELDS FROM products[0m
+  [4;36;1mSQL (0.000108)[0m   [0;1mSELECT count(*) AS count_all FROM products [0m
+  [4;35;1mProduct Load (0.004052)[0m   [0mSELECT * FROM products LIMIT 0, 10[0m
+Rendering  within layouts/admin
+Rendering admin/list
+Completed in 0.10407 (9 reqs/sec) | Rendering: 0.00645 (6%) | DB: 0.00485 (4%) | 200 OK [http://localhost/admin/list]
